@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>Tipo sincronización 1</item>
+        <item>Tipo sincronización 2</item>
+        <item>Tipo sincronizacion 3</item>
+    </string-array>
+
+    <string-array name="pref_syncConnectionTypes_values">
+        <item>tipo1</item>
+        <item>tipo2</item>
+        <item>tipo3</item>
+    </string-array>
+</resources>

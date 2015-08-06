@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Titulo que separa varias preferences en un mismo conjunto -->
+    <PreferenceCategory
+        android:title="Sincronización"
+        android:key="pref_key_sync_settings">
+
+        <CheckBoxPreference
+            android:key="@string/pref_sync_key"
+            android:title="Activar Sync"
+            android:summary="Activa la sincronización"
+            android:defaultValue="true" />
+        <!-- Listado de valores con Radio Button.
+         La key es
+         -->
+        <ListPreference
+            android:dependency="pref_sync_key"
+            android:key="@string/pref_syncConnectionType_key"
+            android:title="Sync Connection Type"
+            android:summary="Elige el tipo de sincronización"
+            android:dialogTitle="The way you sync"
+            android:entries="@array/pref_syncConnectionTypes_entries"
+            android:entryValues="@array/pref_syncConnectionTypes_values"
+            android:defaultValue="@string/pref_syncConnectionTypes_default" />
+    </PreferenceCategory>
+</PreferenceScreen>
